@@ -1,4 +1,113 @@
-body{
-    background-color: #515151;
-    color: #f1f1f1;
+@charset "utf-8";
+/*@font-face
+{
+	font-family: MyEthnocentric;
+	src: local("ethnocentric rg"),
+	url(fonts/ethnocentric rg.ttf);
+}*/
+*,
+*:after,
+*:before
+{
+    margin: 0px;
+	padding: 0px;
+	border: 0px;
+	text-decoration: none;
+	box-sizing: border-box;
+	outline: none;
+	scroll-behavior: smooth;
 }
+
+:root
+{
+	--bg-color: hsla(56, 9%, 90%, 0.8);
+	--second-bg-color: hsla(59, 9%, 67%, 1.0);
+	--third-bg-color: linear-gradient(0deg, #C0BB9B, #ABA997 74%);
+	--text-color: hsla(69, 16%, 40%, 1.0);
+	--second-text-color: hsla(59, 2%, 89%, 0.8);
+	--third-text-color: hsla(72, 16%, 24%, 1.0);
+	--fort-text-color: hsla(59, 4%, 90%, 1.0);
+	--fifth-text-color: hsla(217, 0%, 100%, 1.0);
+	--text-family: Ethnocentric;
+	--text-size: 15px;
+}
+
+html
+{
+	/*font-size: 62.5%;*/
+	overflow-x: hidden;
+}
+
+body
+{
+    /*font-size: 1.6rem;*/
+	width: 100%;
+	background-color: #515151;
+}
+body::-webkit-scrollbar
+{
+	width: 12px;
+}
+body::-webkit-scrollbar-thumb
+{
+  background-color: hsla(69, 16%, 40%, 1.0);
+  border-radius: 20px;
+}
+ul, ol, li
+{
+    list-style-type: none;
+}
+a
+{
+	text-decoration: none;
+}
+
+@media screen and (max-width: 320px)
+{
+
+}
+@media screen and (max-width: 480px)
+{
+
+}
+@media screen and (max-width: 768px)
+{
+
+}
+@media screen and (max-width: 900px)
+{
+
+}
+@media screen and (max-width: 1024px)
+{
+
+}
+/*body
+{
+	background-color: #FFFFFF;
+	color: #515151;
+	font-family: verdana;
+	margin: auto;
+}
+
+a:link
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a:visited
+{
+	color: #515151;
+}
+
+a:hover
+{
+	color: #000000;
+}
+
+a:active
+{
+	color: 	#04169C;
+}
+/*
