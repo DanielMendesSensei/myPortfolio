@@ -1,5 +1,5 @@
 {% load static %}<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +8,99 @@
     <link rel="stylesheet" href="{% static 'css/header.css' %}">
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
     <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="icon" type="image/x-icon" href="logo.ico">
+
+	<script type="text/javascript" src="{% static 'js/index.js' %}" defer></script>
+	<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+
+	<script type="text/javascript" src="{%static 'js/index_querry.js' %}" defer></script>
     <title>{{title}}</title>
 </head>
 <body>
-    <h1>TESTE</h1>
+    <header id="Header_Desktop"> <!--Cabeçalho Desktop-->
+        <nav id="Nav_Desktop">
+            <a href="">Full-Stack & Design</a>
+            <a href="">Skills</a>
+            <a href="">Portifólio</a>
+            <a href="">Formação</a>
+        </nav>
+    </header>
+    <header id="Header_Mobile"> <!--Cabeçalho Desktop-->
+        <div id="Header_Mobile_Itens">
+            <a href="https://www.google.com.br"><i id="Mobile_LinkedIn" class="fa fa-linkedin-square"></i></a>
+            <a href="https://github.com/DanielMendesSensei"><i id="Mobile_GitHub" class="fa fa-github"></i></a>
+            <a id="Dark_Mode" class="material-symbols-outlined" onclick="dark_theme()">dark_mode</a>
+            <a id="Mobile_Menu" class="material-symbols-outlined" onclick="change_display()">menu</a>
+        </div>
+        <nav id="Nav_Mobile">
+                <a href="#sobre_mim">Sobre Mim</a>
+                <a href="">Meus Serviços</a>
+                <a href="#1">Currículo</a>
+                <a href="#2">Portifólio</a>
+                <a href="">Contato</a>
+        </nav>
+        <img id="Mobile_logo" src="{%static 'img/Logo.png' %}">
+        <a href="index.html"><p id="Mobile_Name">{ DM }</p></a>
+    </header>
+    <main>
+        <div id="central">
+            <article id="central-sensei">
+                <p>Sensei & Dev</p>
+            </article>
+            <article id="central-name">
+                <p class="name_1">DANIEL</p>
+                <p class="name_2">MENDES</p>
+            </article>
+            <article id="central-descricao">
+                <p>Olá, Sou <span>Professor, desenvolvedor fullstack, designer e físico</span></p>
+                <p>Conheça meu currículo e portifólio</p>
+            </article>
+            <div class="Mobile_Bottons">
+                <a href="#1">CURRÍCULO</a>
+                <a href="#2" class="Mobile_Bottons_2">PORTIFÓLIO</a>
+            </div>
+        </div>
+        
+        <div id="central_2">
+            <section id="">
+                <p>ESSE É O CURRÌCULO, colocar aqui pequenas coisas</p>
+                <a href="#" class="btn">Download CV</a>
+            </section>
+        </div>
+
+        <div id="central_3">
+            <section id="sobre_mim">
+                <img class="sobre_mim_img" src="{% static 'img/Me.png' %}">
+                <h2>About<span>Me</span></h2>
+                <h3>FullStack Developer</h3>
+                <p>Há mais de 4 anos imerso no mundo da tecnologia e desde pequeno curioso sobre como as coisas funcionam, me aventurei pela licenciatura em física, o que me deu o arcabouço didático para hoje poder ministrar aulas, e no meio dessa jornada me aprofundei em TI aperfeiçoando minhas soft e hard skills. Para saber mais sobre mim continue descendo a página :)</p>
+                <a href="#" class="btn">Read More</a>
+            </section>
+
+        </div>
+        
+        <div id="central_4">
+            <section id="">
+                ESSE É O CURRÌCULO
+            </section>
+        </div>
+        <div id="central_5">
+            <section id="1">
+                ESSE É O CURRÌCULO
+            </section>
+        </div>
+        <div id="central_6">
+            <section id="2">
+                ESSE É O PORTIFOLIO
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p> {{copyright}} </p>
+
+    </footer>
 </body>
 </html>
