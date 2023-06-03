@@ -9,6 +9,7 @@ __pycache__/
 # Algumas pastas
 
 ui/
+linux_venv/
 
 # Distribution / packaging
 .Python
