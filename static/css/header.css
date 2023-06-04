@@ -1,24 +1,130 @@
 @charset "utf-8";
-/*#Header_Desktop
+#Header_Desktop
 {
-	position: fixed;
 	width: 100%;
-	height: 70px;
-	background-color: #9FE2BF;
+	height: 100px;
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+	position: fixed;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	background: var(--third-bg-color);
+	border-radius: 0px 0px 20px 20px;
+	transition: all 0.4s;
+	
 }
-#Nav_Desktop
-{
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
+
 #Header_Mobile
 {
 	display: none;
-}*/
+}
+
+#Nav_Desktop
+{
+	width: 500px;
+	display: flex;
+	justify-content: space-between;
+	margin-left: 180px;
+	margin-top: 34px;
+	order:3;
+}
+
+#Nav_Desktop a
+{
+	height: 22px;
+	text-align: center;
+	font-size: 1.2rem;
+	color: var(--fort-text-color);
+	background-color: var(--fifth-bg-color);
+	border-radius: 10px 0px;
+	padding: 7px;
+	transition: all 0.4s;	
+}
+
+#Nav_Desktop a:hover
+{
+	color: var(--fort-text-color);
+	background-color: var(--forth-bg-color);
+	border-radius: 0px 10px;
+	transition: all 0.4s;
+}
+#Header_Desktop_Itens
+{
+	margin-top: 25px;
+	margin-left: 180px;
+	display: flex;
+	justify-content: center;
+	order: 4;
+}
+
+#Header_Desktop a
+{
+	order: 2;
+}
+
+#Desktop_logo
+{
+	width: 100px;
+	height: 100px;
+	transition: all 0.4s;
+	order: 1;
+}
+
+#Desktop_LinkedIn
+{
+	font-size: 38px;
+	margin-left:0px;
+	color: var(--text-color);
+	transition: all 0.5s;
+}
+
+#Desktop_LinkedIn:hover, #Desktop_GitHub:hover
+{
+	color: var(--second-text-color);
+	transition: all 0.8s;
+}
+
+#Desktop_GitHub
+{
+	font-size: 38px;
+	margin-left: 15px;
+	margin-top: 0px;
+	color: var(--text-color);
+	transition: all 0.5s;
+}
+
+#Desktop_Dark_Mode
+{
+	font-variation-settings: 'FILL' 1; /* 0 contorno | 1 preenchido*/
+	font-size: 40px;
+	color: var(--third-text-color);
+	margin-top: 0px;
+	margin-left: 15px;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+#Desktop_Dark_Mode:hover
+{
+	color: hsla(59, 4%, 90%, 1.0);
+	transition: all 0.8s;	
+}
+
+#Desktop_name
+{
+	font-family: Ethnocentric;
+	color: var(--text-color);
+	margin-left: 15px;
+	margin-top: 38px;
+	transition: all 0.5s;
+}
+
+#Desktop_name:hover
+{
+	color: var(--second-text-color);
+	transition: all 0.8s;
+}
+
 @media screen and (max-width: 320px)
 {	
 
@@ -74,7 +180,7 @@
 	{
 		font-variation-settings: 'FILL' 1; /* 0 contorno | 1 preenchido*/
 		font-size: 40px;
-		color: hsla(72, 16%, 24%, 1.0);
+		color: var(--third-text-color);
 		margin-top: 0px;
 		margin-left: 135px;
 		transition: all 0.5s;
@@ -156,7 +262,7 @@
 		transition: all 0.4s;
 	}
 
-	#Mobile_Name
+	#Mobile_name
 	{
 		font-family: Ethnocentric;
 		color: hsla(69, 16%, 40%, 1.0);
@@ -165,7 +271,7 @@
 		transition: all 0.5s;
 	}
 
-	#Mobile_Name:hover
+	#Mobile_name:hover
 	{
 		color: hsla(59, 2%, 89%, 0.8);
 		transition: all 0.8s;
@@ -175,10 +281,7 @@
 }
 @media screen and (max-width: 480px)
 {
-	#Mobile_Menu
-	{
 
-	}
 }
 @media screen and (max-width: 768px)
 {

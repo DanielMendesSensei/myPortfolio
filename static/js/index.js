@@ -28,13 +28,13 @@ function scrollFunction()
   {
     document.getElementById("Mobile_logo").style.display = "none";
     document.getElementById("Header_Mobile").style.height = "70px";
-    document.getElementById("Mobile_Name").style.marginTop = "-30px";
+    document.getElementById("Mobile_name").style.marginTop = "-30px";
   } 
   else 
   {
     document.getElementById("Mobile_logo").style.display = "block";
     document.getElementById("Header_Mobile").style.height = "150px";
-    document.getElementById("Mobile_Name").style.marginTop = "5px";
+    document.getElementById("Mobile_name").style.marginTop = "5px";
   }
 }
 

@@ -20,11 +20,13 @@
 	--bg-color: hsla(56, 9%, 90%, 0.8);
 	--second-bg-color: hsla(59, 9%, 67%, 1.0);
 	--third-bg-color: linear-gradient(0deg, #C0BB9B, #ABA997 74%);
+	--forth-bg-color: hsla(0, 0%, 32%, 1.0);
+	--fifth-bg-color: hsla(72, 16%, 24%, 1.0);
 	--text-color: hsla(69, 16%, 40%, 1.0);
 	--second-text-color: hsla(59, 2%, 89%, 0.8);
 	--third-text-color: hsla(72, 16%, 24%, 1.0);
 	--fort-text-color: hsla(59, 4%, 90%, 1.0);
-	--fifth-text-color: hsla(217, 0%, 100%, 1.0);
+	--fifth-text-color: hsl(0, 0%, 100%, 1.0);
 	--text-family: Ethnocentric;
 	--text-size: 15px;
 }
@@ -59,7 +61,7 @@ a
 
 @media screen and (max-width: 320px)
 {
-	
+
 }
 @media screen and (max-width: 480px)
 {

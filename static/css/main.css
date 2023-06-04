@@ -1,19 +1,81 @@
 @charset "utf-8";
 main
 {
+	display: none;
+}
+#Desktop_main
+{
 	width: 100%;
-	background-color: hsla(56, 9%, 90%, 0.8);
+	background-color: var(--bg-color);
+	padding-top: 150px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
+
+#central 
+{
+	height: 210px;
+}
+
+#central, #central_2, #central_3, #central_4
+{	
+	width: 96%;
+	padding: 10px;
+	background-color: var(--second-bg-color);
+	border-radius: 10px;
+}
+
+#central_2, #central_3, #central_4
+{	
+	margin-top: 15px;
+}
+#central-sensei, #central-name
+{
+	display: flex;
+	justify-content: center;
+}
+
+#central-name
+{
+	flex-direction: column;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+#central-sensei p
+{
+	font-family: Myriad Pro;
+	font-size: 1.8rem;
+	color: hsla(72, 16%, 24%, 1.0);
+}
+	
+.name_1, .name_2
+{
+	font-family: Ethnocentric;
+	font-size: 2.5rem;
+	color: hsla(72, 16%, 24%, 1.0);
+}
+
+#central-descricao
+{
+	font-family: Myriad Pro;
+	font-size: 1.5rem;
+	text-align: center;
+	color: hsla(72, 16%, 24%, 1.0);
+}
+
 @media screen and (max-width: 320px)
 {
+	#Desktop_main
+	{
+		display: none;
+	}
 	main
 	{
 		width: 100%;
 		padding-top: 160px; /* Distancia do menu para o central */
-		background-color: hsla(56, 9%, 90%, 0.8);
+		background-color: var(--bg-color);
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -62,6 +124,7 @@ main
 	#central-descricao
 	{
 		font-family: Myriad Pro;
+		font-size: 12pt;
 		text-align: center;
 		color: hsla(72, 16%, 24%, 1.0);
 	}

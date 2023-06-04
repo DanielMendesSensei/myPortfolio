@@ -1,4 +1,23 @@
 @charset "utf-8";
+#Header_Desktop
+{
+	width: 100%;
+	display: flex;
+	
+}
+
+#Header_Mobile
+{
+	display: none;
+}
+
+#Desktop_logo
+{
+	width: 100px;
+	height: 100px;
+	margin-left: 2%;
+	transition: all 0.4s;
+}
 /*#Header_Desktop
 {
 	position: fixed;
