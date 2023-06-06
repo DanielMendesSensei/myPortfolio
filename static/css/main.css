@@ -13,56 +13,151 @@ main
 	align-items: center;
 }
 
-#central 
+#Desktop_central
 {
-	height: 210px;
+	display: flex;
+	width: 97.5%;
+
+}
+#Desktop_central-left
+{
+	width: 400px;
+}
+#Desktop_central-rigth
+{
+	margin-left: 15px;
+	width: 900px;
+	display: flex;
+}
+#Desktop_central-left, #Desktop_central-rigth
+{
+	height: 300px;
+	padding: 10px;
+	background-color: var(--second-bg-color);
+	box-shadow: hsla(206, 6%, 25%, 0.3) 0px 1px 2px 0px, hsla(206, 6%, 25%, 0.15) 0px 2px 6px 2px;
+	border-radius: 10px;
 }
 
-#central, #central_2, #central_3, #central_4
+#Desktop_central_2, #Desktop_central_3, #Desktop_central_4, #Desktop_central_5
 {	
 	width: 96%;
 	padding: 10px;
 	background-color: var(--second-bg-color);
+	box-shadow: hsla(206, 6%, 25%, 0.3) 0px 1px 2px 0px, hsla(206, 6%, 25%, 0.15) 0px 2px 6px 2px;
 	border-radius: 10px;
 }
 
-#central_2, #central_3, #central_4
+#Desktop_central_2, #Desktop_central_3, #Desktop_central_4, #Desktop_central_5
 {	
 	margin-top: 15px;
 }
-#central-sensei, #central-name
+#Desktop_central-sensei, #Desktop_central-name
 {
 	display: flex;
 	justify-content: center;
 }
 
-#central-name
+#Desktop_central-name
 {
 	flex-direction: column;
 	text-align: center;
 	margin-bottom: 15px;
 }
 
-#central-sensei p
+#Desktop_central-sensei p
 {
 	font-family: Myriad Pro;
 	font-size: 1.8rem;
 	color: hsla(72, 16%, 24%, 1.0);
 }
 	
-.name_1, .name_2
+.Desktop_name_1, .Desktop_name_2
 {
 	font-family: Ethnocentric;
 	font-size: 2.5rem;
 	color: hsla(72, 16%, 24%, 1.0);
 }
 
-#central-descricao
+#Desktop_central-descricao
 {
 	font-family: Myriad Pro;
 	font-size: 1.5rem;
 	text-align: center;
 	color: hsla(72, 16%, 24%, 1.0);
+}
+#Desktop_sobre_mim_img
+{
+	margin-top: 15px;
+	text-align: center;
+}
+.Desktop_sobre_mim_img
+{
+	width: 200px;
+}
+#Desktop_sobre_mim_descricao
+{
+	font-size: 1.5rem;
+	margin-top: 70px;
+	font-family: Myriad Pro;
+	text-align: justify;
+	color: hsla(72, 16%, 24%, 1.0);
+}
+/*.Desktop_btn
+{
+
+}
+*/
+.Desktop_Bottons
+{
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.Desktop_Bottons a
+{
+	font-family: Ethnocentric;
+	font-size: 20px;
+	color: hsla(59, 4%, 90%, 1.0);
+	background-color: hsla(72, 16%, 24%, 1.0);
+	border-radius: 0px 10px;
+	padding: 5px;	
+}
+.Desktop_Bottons_2
+{
+	margin-left: 15px;
+}
+
+#Desktop_central_2
+{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+/*#Dektop_curriculo
+{
+	
+}
+*/
+
+#Desktop_curriculo p
+{
+	font-family: Ethnocentric;
+	color:var(--third-text-color);
+	font-size: 1.5rem;
+	text-align: center;
+}
+#Desktop_curriculo_logos
+{	
+	margin-top: 15px;
+	display: flex;
+	justify-content: center;
+}
+
+.Desktop_dev_icons
+{
+	width: 80px;
 }
 
 @media screen and (max-width: 320px)

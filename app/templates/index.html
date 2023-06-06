@@ -27,7 +27,7 @@
             <a id="Desktop_Dark_Mode" class="material-symbols-outlined" onclick="dark_theme()">dark_mode</a>
         </div>
         <nav id="Nav_Desktop">
-            <a href="#sobre_mim">Sobre Mim</a>
+            <a href="#Desktop_central-rigth">Sobre Mim</a>
             <a href="">Meus Serviços</a>
             <a href="#1">Currículo</a>
             <a href="#2">Portifólio</a>
@@ -55,61 +55,75 @@
     </header>
 
     <main id="Desktop_main">
-        <div id="central">
-            <article id="central-sensei">
-                <p>Sensei & Dev</p>
-            </article>
-            <article id="central-name">
-                <p class="name_1">DANIEL</p>
-                <p class="name_2">MENDES</p>
-            </article>
-            <article id="central-descricao">
-                <p>Olá, Sou <span>Professor, desenvolvedor fullstack, designer e físico</span></p>
-                <p>Conheça meu currículo e portifólio</p>
-            </article>
-            <div class="Mobile_Bottons">
-                <a href="#1">CURRÍCULO</a>
-                <a href="#2" class="Mobile_Bottons_2">PORTIFÓLIO</a>
+        <div id="Desktop_central">
+            <div id="Desktop_central-left">
+                <article id="Desktop_central-sensei">
+                    <p>Sensei & Dev</p>
+                </article>
+                <article id="Desktop_central-name">
+                    <p class="Desktop_name_1">DANIEL</p>
+                    <p class="Desktop_name_2">MENDES</p>
+                </article>
+                <article id="Desktop_central-descricao">
+                    <p>Olá, Sou <span>Professor, desenvolvedor fullstack, designer e físico</span></p>
+                    <p>Conheça meu currículo e portifólio</p>
+                </article>
+                <div class="Desktop_Bottons">
+                    <a href="#1">CURRÍCULO</a>
+                    <a href="#2" class="Desktop_Bottons_2">PORTIFÓLIO</a>
+                </div>
+            </div>
+            <div id="Desktop_central-rigth">
+                <section id="Desktop_sobre_mim_img">
+                    <img class="Desktop_sobre_mim_img" src="{% static 'img/Me.png' %}">
+                    <h2>About<span>Me</span></h2>
+                    <h3>FullStack Developer</h3>
+                </section>
+                <section id="Desktop_sobre_mim_descricao">    
+                    <p>Há mais de 4 anos imerso no mundo da tecnologia e desde pequeno curioso sobre como as coisas funcionam, me aventurei pela licenciatura em física, o que me deu o arcabouço didático para hoje poder ministrar aulas, e no meio dessa jornada me aprofundei em TI, aperfeiçoando minhas soft e hard skills. Para saber mais sobre mim continue descendo a página :)</p>
+                    <!--<a href="#" class="Desktop_btn">Read More</a>-->    
+                </section>
             </div>
         </div>
-        
-        <div id="central_2">
-            <section id="">
-                <p>ESSE É O CURRÌCULO, colocar aqui pequenas coisas</p>
-                <a href="#" class="btn">Download CV</a>
-            </section>
+        <div id="Desktop_central_2">
+            <article id="Desktop_curriculo">
+                <p>{{curriculo}}</p> 
+            </article>
+            <article id="Desktop_curriculo_logos">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" class="Desktop_dev_icons"/>&nbsp;
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/qt/qt-original.svg" class="Desktop_dev_icons"/>&nbsp;
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" class="Desktop_dev_icons"/>&nbsp;
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" class="Desktop_dev_icons"/>&nbsp;
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="Desktop_dev_icons"/>&nbsp;
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="Desktop_dev_icons"/>&nbsp;
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" class="Desktop_dev_icons"/>&nbsp;
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/embeddedc/embeddedc-original-wordmark.svg" class="Desktop_dev_icons"/>&nbsp;
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" class="Desktop_dev_icons"/>&nbsp;
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original-wordmark.svg" class="Desktop_dev_icons"/>&nbsp;
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="Desktop_dev_icons"/>&nbsp;
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="Desktop_dev_icons"/>&nbsp;
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg" class="Desktop_dev_icons"/>&nbsp;
+            </article>
+            <!--<a href="#" class="Desktop_btn">Download CV</a>-->
         </div>
 
-        <div id="central_3">
-            <section id="sobre_mim">
-                <img class="sobre_mim_img" src="{% static 'img/Me.png' %}">
-                <h2>About<span>Me</span></h2>
-                <h3>FullStack Developer</h3>
-                <p>Há mais de 4 anos imerso no mundo da tecnologia e desde pequeno curioso sobre como as coisas funcionam, me aventurei pela licenciatura em física, o que me deu o arcabouço didático para hoje poder ministrar aulas, e no meio dessa jornada me aprofundei em TI aperfeiçoando minhas soft e hard skills. Para saber mais sobre mim continue descendo a página :)</p>
-                <a href="#" class="btn">Read More</a>
-            </section>
-
-        </div>
-        
-        <div id="central_4">
+        <div id="Desktop_central_3">
             <section id="">
                 ESSE É O CURRÌCULO
             </section>
         </div>
-        <div id="central_5">
+        
+        <div id="Desktop_central_4">
             <section id="1">
                 ESSE É O CURRÌCULO
             </section>
         </div>
-        <div id="central_6">
+        <div id="Desktop_central_5">
             <section id="2">
                 ESSE É O PORTIFOLIO
             </section>
         </div>
     </main>
-
-
-
 
     <main>
         <div id="central">
@@ -132,7 +146,7 @@
         
         <div id="central_2">
             <section id="">
-                <p>ESSE É O CURRÌCULO, colocar aqui pequenas coisas</p>
+                <p>{{curriculo}}</p>
                 <a href="#" class="btn">Download CV</a>
             </section>
         </div>
