@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="{% static 'css/footer.css' %}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+          
 
 	<link rel="icon" type="image/x-icon" href="logo.ico">
 
@@ -33,7 +35,7 @@
             <a href="#2">Portifólio</a>
             <a href="">Contato</a>
         </nav>
-        <img id="Desktop_logo" src="{%static 'img/Logo.png' %}">
+        <!--<img id="Desktop_logo" src="{%static 'img/Logo.png' %}">-->
         <a href="{% url 'app:home' %}"><p id="Desktop_name">{ Daniel Mendes }</p></a>
     </header>
     <header id="Header_Mobile"> <!--Cabeçalho Desktop-->
@@ -65,13 +67,13 @@
                     <p class="Desktop_name_2">MENDES</p>
                 </article>
                 <article id="Desktop_central-descricao">
-                    <p>Olá, Sou <span>Professor, desenvolvedor fullstack, designer e físico</span></p>
-                    <p>Conheça meu currículo e portifólio</p>
+                    <p>Olá, tenho 25 anos, sou <span>Professor, Desenvolvedor Full Stack, Designer e Estudante de Física</span></p>
+                    <!--<p>Conheça meu currículo e portifólio</p>-->
                 </article>
-                <div class="Desktop_Bottons">
+                <!--<div class="Desktop_Bottons">
                     <a href="#1">CURRÍCULO</a>
                     <a href="#2" class="Desktop_Bottons_2">PORTIFÓLIO</a>
-                </div>
+                </div>-->
             </div>
             <div id="Desktop_central-rigth">
                 <section id="Desktop_sobre_mim_img">
@@ -86,14 +88,14 @@
             </div>
         </div>
         <div id="Desktop_central_2">
-            <article id="Desktop_curriculo">
-                <p>{{curriculo}}</p> 
-            </article>
-            <article id="Desktop_curriculo_logos">
+            <section id="Desktop_hard_skills">
+                <p>{{hard_skills}}</p> 
+            </section>
+            <section id="Desktop_hard_skills_logos">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" class="Desktop_dev_icons"/>&nbsp;
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/qt/qt-original.svg" class="Desktop_dev_icons"/>&nbsp;
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" class="Desktop_dev_icons"/>&nbsp;
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" class="Desktop_dev_icons"/>&nbsp;
+                <i class="devicon-qt-original" id="qt"></i>&nbsp;
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="Desktop_dev_icons"/>&nbsp;
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="Desktop_dev_icons"/>&nbsp;
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" class="Desktop_dev_icons"/>&nbsp;
@@ -102,14 +104,42 @@
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original-wordmark.svg" class="Desktop_dev_icons"/>&nbsp;
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="Desktop_dev_icons"/>&nbsp;
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="Desktop_dev_icons"/>&nbsp;
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg" class="Desktop_dev_icons"/>&nbsp;
-            </article>
+                <i class="devicon-photoshop-line" id="photoshop"></i>&nbsp;
+                <i class="devicon-illustrator-line colored" id="illustrator"></i>&nbsp;
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/latex/latex-original.svg" class="Desktop_dev_icons"/>&nbsp;
+            </section>
             <!--<a href="#" class="Desktop_btn">Download CV</a>-->
         </div>
 
         <div id="Desktop_central_3">
-            <section id="">
-                ESSE É O CURRÌCULO
+            <section id="Desktop_soft_skills">
+                <p>{{soft_skills}}</p>
+            </section>
+            <section id="Desktop_galeria_soft_skills">
+                <div id="Desktop_vector_1">
+                    <img class="Desktop_vector_1" src="{% static 'img/trabalho_em_equipe.png' %}">
+                    <div class="Desktop_vector_1_overlay">
+                        <div class="Desktop_vector_1_title">Trabalho em equipe</div>
+                    </div>
+                </div>
+                <div id="Desktop_vector_2">
+                    <img class="Desktop_vector_2" src="{% static 'img/resolucao_de_problemas.png' %}">
+                    <div class="Desktop_vector_2_overlay">
+                        <div class="Desktop_vector_2_title">Resolução de Problemas</div>
+                    </div>
+                </div>
+                <div id="Desktop_vector_3">
+                    <img class="Desktop_vector_3" src="{% static 'img/criatividade.png' %}">
+                    <div class="Desktop_vector_3_overlay">
+                        <div class="Desktop_vector_3_title">Criatividade</div>
+                    </div>
+                </div>
+                <div id="Desktop_vector_4">
+                    <img class="Desktop_vector_4" src="{% static 'img/flexibilidade.png' %}">
+                    <div class="Desktop_vector_4_overlay">
+                        <div class="Desktop_vector_4_title">Flexibilidade</div>
+                    </div>
+                </div>
             </section>
         </div>
         

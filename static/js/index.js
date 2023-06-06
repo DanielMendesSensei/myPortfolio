@@ -1,5 +1,7 @@
 /*Iniciando o desenvolvimento JS*/
 /*alert("Teste Alert"); /*Cria um alerta no navegador*/
+alert("Esse site está em construção!!");
+
 function soma()
 {
 	document.getElementById("demo").innerHTML = "Mudança.";

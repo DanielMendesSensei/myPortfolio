@@ -7,7 +7,7 @@ main
 {
 	width: 100%;
 	background-color: var(--bg-color);
-	padding-top: 150px;
+	padding-top: 80px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -132,23 +132,18 @@ main
 {
 	display: flex;
 	justify-content: center;
+	z-index: 1;
 	flex-direction: column;
 }
 
-/*#Dektop_curriculo
-{
-	
-}
-*/
-
-#Desktop_curriculo p
+#Desktop_hard_skills p, #Desktop_soft_skills p
 {
 	font-family: Ethnocentric;
 	color:var(--third-text-color);
 	font-size: 1.5rem;
 	text-align: center;
 }
-#Desktop_curriculo_logos
+#Desktop_hard_skills_logos
 {	
 	margin-top: 15px;
 	display: flex;
@@ -157,7 +152,119 @@ main
 
 .Desktop_dev_icons
 {
-	width: 80px;
+	width: 70px;
+	opacity: 0.7;
+	transition: all 0.4s;
+}
+
+.Desktop_dev_icons:hover
+{
+	width: 90px;
+	opacity: 1;
+}
+
+#qt
+{
+	font-size: 4.5rem;
+	transition: all 0.4s;
+	color:hsl(0, 0%, 95%);
+	opacity: 0.7;
+}
+
+#qt:hover
+{
+	font-size: 5.5rem;
+	opacity: 1;
+}
+
+#illustrator
+{
+	font-size: 4.5rem;
+	transition: all 0.4s;
+	opacity: 0.7;
+}
+
+#illustrator:hover
+{
+	font-size: 5.5rem;
+	opacity: 1;
+}
+
+#photoshop
+{
+	font-size: 4.5rem;
+	opacity: 0.7;
+	transition: all 0.4s;
+	color: hsl(221, 90%, 48%);
+}
+
+#photoshop:hover
+{	
+	font-size: 5.5rem;
+	opacity: 1;
+}
+
+#Desktop_galeria_soft_skills
+{
+	margin-top: 15px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#Desktop_vector_1, #Desktop_vector_2, #Desktop_vector_3, #Desktop_vector_4
+{
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	width: 18%;
+	
+}
+
+.Desktop_vector_1, .Desktop_vector_2, .Desktop_vector_3, .Desktop_vector_4
+{
+	display: block;
+	border-radius: 0px 10px;
+	width: 100%;
+}
+.Desktop_vector_1_overlay, .Desktop_vector_2_overlay, .Desktop_vector_3_overlay, .Desktop_vector_4_overlay
+{
+	position: absolute;
+	top:0; /* deixa alinhado a caixa */
+	left:0;
+	background-color: hsla(0, 0%, 32%,0.4);
+	border-radius: 0px 10px;
+	color: #f1f1f1;
+	text-shadow: 2px 2px 2px #515151;
+	font-family: Ethnocentric;
+	font-size: 0.88rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center; /*ajuste vertical*/
+	justify-content: center; /*ajuste horizontal*/
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: all 0.4s;
+}
+
+.Desktop_vector_2_overlay
+{
+	text-align: center;
+}
+.Desktop_vector_1_overlay > *, .Desktop_vector_2_overlay > *, .Desktop_vector_3_overlay > *, .Desktop_vector_4_overlay > *
+{
+	transform: translateY(25px);
+	transition: transform 0.25s;
+}
+
+.Desktop_vector_1_overlay:hover, .Desktop_vector_2_overlay:hover, .Desktop_vector_3_overlay:hover, .Desktop_vector_4_overlay:hover
+{
+	opacity: 1;
+}
+
+.Desktop_vector_1_overlay:hover > *, .Desktop_vector_2_overlay:hover > *, .Desktop_vector_3_overlay:hover > *, .Desktop_vector_4_overlay:hover > *
+{
+	transform: translateY(0);
 }
 
 @media screen and (max-width: 320px)
