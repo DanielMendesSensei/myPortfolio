@@ -8,8 +8,8 @@
 	position: fixed;
 	padding-bottom: 15px;
 	padding-top: 15px;
-	background: var(--third-bg-color);
-	box-shadow: hsla(206, 6%, 25%, 0.3) 0px 1px 2px 0px, hsla(206, 6%, 25%, 0.15) 0px 2px 6px 2px;
+	background: var(--second-bg-color);
+	box-shadow: var(--sixth-bg-color) 0px 1px 2px 0px, var(--seventh-bg-color) 0px 2px 6px 2px;
 	border-radius: 0px 0px 20px 20px;
 	transition: all 0.4s;
 	z-index: 2; /* Resolve problema com imagens com opacidade em relação ao menu*/
@@ -35,8 +35,8 @@
 	height: 22px;
 	text-align: center;
 	font-size: 1.2rem;
-	color: var(--fort-text-color);
-	background-color: var(--fifth-bg-color);
+	color: var(--fifth-text-color);
+	background-color: var(--third-bg-color);
 	border-radius: 10px 0px;
 	padding: 7px;
 	transition: all 0.4s;	
@@ -44,12 +44,13 @@
 
 #Nav_Desktop a:hover
 {
-	color: var(--fort-text-color);
-	box-shadow: hsla(7, 82%, 45%, 0.25) 0px 30px 60px -12px inset, hsla(0, 0%, 0%, 0.3) 0px 18px 36px -18px inset;
-	background-color: var(--forth-bg-color);
+	color: var(--text-color);
 	border-radius: 0px 10px;
-	transition: all 0.4s;
+	background-color: var(--fourth-bg-color);
+	box-shadow: var(--sixth-bg-color) 0px 1px 2px 0px, var(--seventh-bg-color) 0px 2px 6px 2px;
+	transition: all 0.8s;
 }
+
 #Header_Desktop_Itens
 {
 	margin-left: 180px;
@@ -98,7 +99,7 @@
 {
 	font-variation-settings: 'FILL' 1; /* 0 contorno | 1 preenchido*/
 	font-size: 40px;
-	color: var(--third-text-color);
+	color: var(--text-color);
 	margin-top: 0px;
 	margin-left: 15px;
 	transition: all 0.5s;
@@ -107,13 +108,13 @@
 
 #Desktop_Dark_Mode:hover
 {
-	color: hsla(59, 4%, 90%, 1.0);
+	color:var(--second-text-color);
 	transition: all 0.8s;	
 }
 
 #Desktop_name
 {
-	font-family: Ethnocentric;
+	font-family: var(--text-family);
 	color: var(--text-color);
 	margin-left: 15px;
 	margin-top: 10px;
@@ -127,6 +128,7 @@
 	transition: all 0.8s;
 }
 
+/* Responsividade - Precisa ajustar as cores*/
 @media screen and (max-width: 320px)
 {	
 
@@ -266,7 +268,7 @@
 
 	#Mobile_name
 	{
-		font-family: Ethnocentric;
+		font-family: var(--text-family);
 		color: hsla(69, 16%, 40%, 1.0);
 		margin-left: 41.5625%;
 		margin-top: 5px;

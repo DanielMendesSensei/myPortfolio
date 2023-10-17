@@ -1,10 +1,10 @@
 @charset "utf-8";
-/*@font-face
+@font-face
 {
 	font-family: MyEthnocentric;
-	src: local("ethnocentric rg"),
-	url(fonts/ethnocentric rg.ttf);
-}*/
+	src: url('/static/fonts/ethnocentric-rg.otf');
+}
+
 *
 {
 	margin: 0px;
@@ -15,20 +15,56 @@
 	outline: none;
 	scroll-behavior: smooth;
 }
+
+:root[data-theme="light"]
+{
+	/* background colors */
+	--bg-color: hsl(54, 40%, 91%);
+	--second-bg-color: hsl(52, 23%, 68%);	
+	--third-bg-color: hsl(38, 9%, 25%);
+	--fourth-bg-color:hsl(40, 36%, 84%);
+
+	/* box-shadow background colors */
+	--fifth-bg-color:hsla(0, 0%, 0%, 0.302);
+	--sixth-bg-color:hsla(210, 6%, 25%, 0.302);
+	--seventh-bg-color:hsla(210, 6%, 25%, 0.149);
+
+	/* text colors */
+	--text-color: #45413a;
+	--second-text-color: hsla(59, 4%, 90%, 1.0);
+	--third-text-color: hsla(72, 16%, 24%, 1.0);
+	--fort-text-color: hsla(59, 2%, 89%, 0.8);
+	--fifth-text-color: hsl(0, 0%, 95%);
+
+}
+
+:root[data-theme="dark"]
+{
+	/* background colors */
+	--bg-color: #38393e;
+	--second-bg-color: #30302c;	
+	--third-bg-color: #cfc9b6;
+	--fourth-bg-color:#38393e;
+
+	/* box-shadow background colors */
+	--fifth-bg-color:hsla(0, 0%, 100%, 0.302);
+	--sixth-bg-color:hsla(210, 100%, 94%, 0.302);
+	--seventh-bg-color:hsla(210, 100%, 93%, 0.149);
+
+	/* text colors */
+	--text-color: #cfc9b6;
+	--second-text-color:#f1f1f1;
+	--third-text-color: hsla(72, 16%, 24%, 1.0);
+	--fort-text-color: hsla(59, 2%, 89%, 0.8);
+	--fifth-text-color: #30302c;
+}
+
 :root
 {
-	--bg-color: hsla(56, 9%, 90%, 0.8);
-	--second-bg-color: hsla(59, 9%, 67%, 1.0);
-	--third-bg-color: linear-gradient(0deg, #C0BB9B, #ABA997 74%);
-	--forth-bg-color: hsla(0, 0%, 32%, 1.0);
-	--fifth-bg-color: hsla(72, 16%, 24%, 1.0);
-	--text-color: hsla(69, 16%, 40%, 1.0);
-	--second-text-color: hsla(59, 2%, 89%, 0.8);
-	--third-text-color: hsla(72, 16%, 24%, 1.0);
-	--fort-text-color: hsla(59, 4%, 90%, 1.0);
-	--fifth-text-color: hsl(0, 0%, 100%, 1.0);
-	--text-family: Ethnocentric;
+	/* fonts and typography*/
+	--text-family: MyEthnocentric;
 	--text-size: 15px;
+	--decay-bg-color:hsla(0, 0%, 100%, 0);
 }
 
 html

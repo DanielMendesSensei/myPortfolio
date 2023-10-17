@@ -1,10 +1,10 @@
 @charset "utf-8";
-/*@font-face
+@font-face
 {
 	font-family: MyEthnocentric;
-	src: local("ethnocentric rg"),
-	url(fonts/ethnocentric rg.ttf);
-}*/
+	src: url('/static/fonts/ethnocentric-rg.otf');
+}
+
 *
 {
 	margin: 0px;
@@ -25,7 +25,7 @@
 	--third-text-color: hsla(72, 16%, 24%, 1.0);
 	--fort-text-color: hsla(59, 4%, 90%, 1.0);
 	--fifth-text-color: hsla(217, 0%, 100%, 1.0);
-	--text-family: Ethnocentric;
+	--text-family: MyEthnocentric;
 	--text-size: 15px;
 }
 

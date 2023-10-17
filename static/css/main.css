@@ -22,39 +22,43 @@ main
 #Desktop_central-left
 {
 	width: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 #Desktop_central-rigth
 {
 	margin-left: 15px;
 	width: 900px;
 	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 #Desktop_central-left, #Desktop_central-rigth
 {
 	height: 300px;
 	padding: 10px;
 	background-color: var(--second-bg-color);
-	box-shadow: hsla(206, 6%, 25%, 0.3) 0px 1px 2px 0px, hsla(206, 6%, 25%, 0.15) 0px 2px 6px 2px;
+	box-shadow: var(--sixth-bg-color) 0px 1px 2px 0px, var(--seventh-bg-color) 0px 2px 6px 2px;
 	border-radius: 10px;
 }
 
-#Desktop_central_2, #Desktop_central_3, #Desktop_central_4, #Desktop_central_5
+#Desktop_central_2, #Desktop_central_3, #Desktop_central_4, #Desktop_central_5, #Desktop_central_6, #Desktop_central_7
 {	
+	margin-top: 15px;
 	width: 96%;
 	padding: 10px;
 	background-color: var(--second-bg-color);
-	box-shadow: hsla(206, 6%, 25%, 0.3) 0px 1px 2px 0px, hsla(206, 6%, 25%, 0.15) 0px 2px 6px 2px;
+	box-shadow: var(--sixth-bg-color) 0px 1px 2px 0px, var(--seventh-bg-color) 0px 2px 6px 2px;
 	border-radius: 10px;
 }
 
-#Desktop_central_2, #Desktop_central_3, #Desktop_central_4, #Desktop_central_5
-{	
-	margin-top: 15px;
-}
 #Desktop_central-sensei, #Desktop_central-name
 {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 
 #Desktop_central-name
@@ -68,14 +72,14 @@ main
 {
 	font-family: Myriad Pro;
 	font-size: 1.8rem;
-	color: hsla(72, 16%, 24%, 1.0);
+	color: var(--text-color);
 }
 	
 .Desktop_name_1, .Desktop_name_2
 {
-	font-family: Ethnocentric;
+	font-family: var(--text-family);
 	font-size: 2.5rem;
-	color: hsla(72, 16%, 24%, 1.0);
+	color: var(--text-color);
 }
 
 #Desktop_central-descricao
@@ -83,12 +87,12 @@ main
 	font-family: Myriad Pro;
 	font-size: 1.5rem;
 	text-align: center;
-	color: hsla(72, 16%, 24%, 1.0);
+	color: var(--text-color);
 }
 #Desktop_sobre_mim_img
 {
-	margin-top: 15px;
 	text-align: center;
+	color: var(--text-color);
 }
 .Desktop_sobre_mim_img
 {
@@ -97,16 +101,10 @@ main
 #Desktop_sobre_mim_descricao
 {
 	font-size: 1.5rem;
-	margin-top: 70px;
 	font-family: Myriad Pro;
 	text-align: justify;
-	color: hsla(72, 16%, 24%, 1.0);
+	color: var(--text-color);
 }
-/*.Desktop_btn
-{
-
-}
-*/
 .Desktop_Bottons
 {
 	display: flex;
@@ -116,7 +114,7 @@ main
 
 .Desktop_Bottons a
 {
-	font-family: Ethnocentric;
+	font-family: var(--text-family);
 	font-size: 20px;
 	color: hsla(59, 4%, 90%, 1.0);
 	background-color: hsla(72, 16%, 24%, 1.0);
@@ -132,14 +130,15 @@ main
 {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	z-index: 1;
 	flex-direction: column;
 }
 
-#Desktop_hard_skills p, #Desktop_soft_skills p
+#Desktop_hard_skills p, #Desktop_soft_skills p, #Desktop_portfolio p, #Desktop_meus_alunos p, #Desktop_Oq p, #Desktop_Certificados p
 {
-	font-family: Ethnocentric;
-	color:var(--third-text-color);
+	font-family: var(--text-family);
+	color:var(--text-color);
 	font-size: 1.5rem;
 	text-align: center;
 }
@@ -208,7 +207,7 @@ main
 {
 	margin-top: 15px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 }
 
 #Desktop_vector_1, #Desktop_vector_2, #Desktop_vector_3, #Desktop_vector_4
@@ -235,7 +234,7 @@ main
 	border-radius: 0px 10px;
 	color: #f1f1f1;
 	text-shadow: 2px 2px 2px #515151;
-	font-family: Ethnocentric;
+	font-family: var(--text-family);
 	font-size: 0.88rem;
 	display: flex;
 	flex-direction: column;
@@ -266,6 +265,140 @@ main
 {
 	transform: translateY(0);
 }
+
+/* All the litle and big things */
+
+#auto-corousel{
+    height: 500px;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.carousel-container{
+    display: flex;
+    width: calc(250px * 18);
+    animation: scroll 20s linear infinite;
+
+}
+
+.carousel-container:hover{
+	animation-play-state: paused;
+}
+
+.slide{
+    height: 200px;
+    width: 280px;
+    display: flex;
+    align-items: center;
+    padding-right: 170px;
+    perspective: 100px;
+}
+
+@keyframes scroll{
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 9));
+		transition: all 1s;
+    }
+} 
+
+.slide img {
+    width: 150%;
+    transition: transform 1s;
+}
+
+.slide img:hover {
+    transform: scale(1.1);
+	cursor: pointer;
+}
+
+#auto-corousel-2{
+    height: 250px;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+/* tentar fazer a animação na vertical */
+.carousel-container-2{ 
+    display: flex;
+    height: calc(250px * 18);
+    animation: scroll_2 60s linear infinite;
+
+}
+
+.carousel-container-2:hover{
+	animation-play-state: paused;
+}
+
+
+.slide-2{
+    height: 200px;
+    width: 250px;
+    display: flex;
+	flex-direction: column;
+    align-items: center;
+    padding-right: 170px;
+    perspective: 100px;
+}
+
+
+@keyframes scroll_2{
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(calc(250px * 9));
+    }
+} 
+
+
+.slide-2 img {
+    width: 150%;
+    transition: transform 1s;
+}
+
+.slide-2 img:hover {
+    transform: scale(1.2);
+	cursor: pointer;
+}
+
+#auto-corousel::before, #auto-corousel-2::before{
+	background: linear-gradient(to right, var(--text-color) -90%,
+    var(--decay-bg-color) 100%);
+	border-radius: 10px;
+    content: '';
+    height: 100%;
+    position:absolute;
+    width: 8%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+
+ #auto-corousel::after, #auto-corousel-2::after{
+	background: linear-gradient(to right, var(--text-color) -90%,
+    var(--decay-bg-color) 100%);
+	border-radius: 10px;
+	content: '';
+    height: 100%;
+	width: 8%;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}  
+
 
 @media screen and (max-width: 320px)
 {
@@ -318,7 +451,7 @@ main
 	
 	.name_1, .name_2
 	{
-		font-family: Ethnocentric;
+		font-family: var(--text-family);
 		font-size: 20pt;
 		color: hsla(72, 16%, 24%, 1.0);
 	}
@@ -340,7 +473,7 @@ main
 
 	.Mobile_Bottons a
 	{
-		font-family: Ethnocentric;
+		font-family: var(--text-family);
 		font-size: 15px;
 		color: hsla(59, 4%, 90%, 1.0);
 		background-color: hsla(72, 16%, 24%, 1.0);

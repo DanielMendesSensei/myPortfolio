@@ -1,11 +1,32 @@
 /*Iniciando o desenvolvimento JS*/
 /*alert("Teste Alert"); /*Cria um alerta no navegador*/
-alert("Esse site está em construção!!");
+/* alert("Esse site está em construção!!"); */
 
-function soma()
-{
-	document.getElementById("demo").innerHTML = "Mudança.";
+//Swich Function
+const swichTheme = () => {
+  //Get root elements and date theme value
+  const rootElement = document.documentElement
+  let dataTheme = rootElement.getAttribute('data-theme'),
+    newTheme
+  
+  newTheme = (dataTheme === 'light') ? 'dark' : 'light'
+  if (newTheme === 'dark'){
+    document.getElementById("Desktop_Dark_Mode").innerHTML = "light_mode";
+    document.getElementById("Dark_Mode").innerHTML = "light_mode";
+  } else{
+    document.getElementById("Desktop_Dark_Mode").innerHTML = "dark_mode";
+    document.getElementById("Dark_Mode").innerHTML = "dark_mode";
+  }
+
+  //Set the new HTML attribute
+  rootElement.setAttribute('data-theme', newTheme)
 }
+
+//Add event listner for the theme switcher
+document.querySelector('#Desktop_Dark_Mode').addEventListener('click', swichTheme)
+document.querySelector('#Dark_Mode').addEventListener('click', swichTheme)
+
+//Others functions
 function change_display()
 {
 	if (Nav_Mobile.style.display == "block")
@@ -40,12 +61,12 @@ function scrollFunction()
   }
 }
 
-function dark_theme()
+/* function dark_theme()
 {
 	const html = document.querySelector('body');
 	html.style.backgroundColor = "black";
 
-}
+} */
 
 //
 
