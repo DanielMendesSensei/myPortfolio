@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
           
 
-	<link rel="icon" type="image/x-icon" href="logo.ico">
+	<link rel="icon" type="image/x-icon" href="{% static 'img/Logo.ico' %}">
 
 	<script type="text/javascript" src="{% static 'js/index.js' %}" defer></script>
 	<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
@@ -97,13 +97,15 @@
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" class="Desktop_dev_icons"/>&nbsp;
                 <i class="devicon-qt-original" id="qt"></i>&nbsp;
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="Desktop_dev_icons"/>&nbsp;
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="Desktop_dev_icons"/>&nbsp;
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" class="Desktop_dev_icons"/>&nbsp;
+                
+                {% comment %} <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" class="Desktop_dev_icons"/>&nbsp;
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/embeddedc/embeddedc-original-wordmark.svg" class="Desktop_dev_icons"/>&nbsp;
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" class="Desktop_dev_icons"/>&nbsp;
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" class="Desktop_dev_icons"/>&nbsp; {% endcomment %}
+
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original-wordmark.svg" class="Desktop_dev_icons"/>&nbsp;
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="Desktop_dev_icons"/>&nbsp;
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="Desktop_dev_icons"/>&nbsp;
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="Desktop_dev_icons"/>&nbsp;
                 <i class="devicon-photoshop-line" id="photoshop"></i>&nbsp;
                 <i class="devicon-illustrator-line colored" id="illustrator"></i>&nbsp;
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/latex/latex-original.svg" class="Desktop_dev_icons"/>&nbsp;
@@ -250,11 +252,303 @@
                 <p>{{meus_alunos}}</p>
             </section>
             <div id = "auto-corousel-2">
+
+                {% comment %} 1ª Parte Animação Vertical {% endcomment %}
                 <div class = "carousel-container-2">
-                    <div class = "slide">
-                        <a href="https://designportfoliodanielmendes.up.railway.app/" target="_blank">
-                            <img src="{% static 'img/DesignPortfolio-Presentation.png'%}"alt="Design Portfolio">
-                        </a>
+                    <div class = "slide-2">
+                        <section>
+                            <a href="https://github.com/mayconslv" target="_blank">
+                                <img src="{% static 'img/Alunos/Maycon.jpeg'%}" alt="Júlio Cesar">
+                            </a>
+                            <div class = "Feedback-overlay">
+                                <p><b><i>Maycon Silva</i></b></p>
+                                <b>Nota ao Sensei: 10</b>
+                                <p><i>Instituição: PDA</i></p>
+                                <p class="descricao_aluno">"As aulas são objetivas e muito bem explicadas!"</p>
+                                <a href="https://github.com/mayconslv" target="_blank">
+                                    <i id="github_aluno" class="fa fa-github"></i>
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                    <div class = "slide-2">
+                        <section>
+                            <a href="https://github.com/JulioCssar" target="_blank">
+                                <img src="{% static 'img/Alunos/JulioCesar.jpeg'%}" alt="Júlio Cesar">
+                            </a>
+                            <div class = "Feedback-overlay">
+                                <p><b><i>Júlio Cesar</i></b></p>
+                                <b>Nota ao Sensei: 9</b>
+                                <p><i>Instituição: PDA</i></p>
+                                <p class="descricao_aluno">"O Sensei segue etapa por etapa e explica bem"</p>
+                                <a href="https://github.com/JulioCssar" target="_blank">
+                                    <i id="github_aluno" class="fa fa-github"></i>
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                    <div class = "slide-2">
+                        <section>
+                            <a href="https://github.com/mayconslv" target="_blank">
+                                <img src="{% static 'img/Alunos/Maycon.jpeg'%}" alt="Júlio Cesar">
+                            </a>
+                            <div class = "Feedback-overlay">
+                                <p><b><i>Maycon Silva</i></b></p>
+                                <b>Nota ao Sensei: 10</b>
+                                <p><i>Instituição: PDA</i></p>
+                                <p class="descricao_aluno">"As aulas são objetivas e muito bem explicadas!"</p>
+                                <a href="https://github.com/mayconslv" target="_blank">
+                                    <i id="github_aluno" class="fa fa-github"></i>
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                    <div class = "slide-2">
+                        <section>
+                            <a href="https://github.com/mayconslv" target="_blank">
+                                <img src="{% static 'img/Alunos/Maycon.jpeg'%}" alt="Júlio Cesar">
+                            </a>
+                            <div class = "Feedback-overlay">
+                                <p><b><i>Maycon Silva</i></b></p>
+                                <b>Nota ao Sensei: 10</b>
+                                <p><i>Instituição: PDA</i></p>
+                                <p class="descricao_aluno">"As aulas são objetivas e muito bem explicadas!"</p>
+                                <a href="https://github.com/mayconslv" target="_blank">
+                                    <i id="github_aluno" class="fa fa-github"></i>
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                    <div class = "slide-2">
+                        <section>
+                            <a href="https://github.com/mayconslv" target="_blank">
+                                <img src="{% static 'img/Alunos/Maycon.jpeg'%}" alt="Júlio Cesar">
+                            </a>
+                            <div class = "Feedback-overlay">
+                                <p><b><i>Maycon Silva</i></b></p>
+                                <b>Nota ao Sensei: 10</b>
+                                <p><i>Instituição: PDA</i></p>
+                                <p class="descricao_aluno">"As aulas são objetivas e muito bem explicadas!"</p>
+                                <a href="https://github.com/mayconslv" target="_blank">
+                                    <i id="github_aluno" class="fa fa-github"></i>
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                    <div class = "slide-2">
+                        <section>
+                            <a href="https://github.com/mayconslv" target="_blank">
+                                <img src="{% static 'img/Alunos/Maycon.jpeg'%}" alt="Júlio Cesar">
+                            </a>
+                            <div class = "Feedback-overlay">
+                                <p><b><i>Maycon Silva</i></b></p>
+                                <b>Nota ao Sensei: 10</b>
+                                <p><i>Instituição: PDA</i></p>
+                                <p class="descricao_aluno">"As aulas são objetivas e muito bem explicadas!"</p>
+                                <a href="https://github.com/mayconslv" target="_blank">
+                                    <i id="github_aluno" class="fa fa-github"></i>
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                {% comment %} 2ª Parte Animação Vertical {% endcomment %}
+                <div class = "carousel-container-2">
+                    <div class = "slide-2">
+                        <section>
+                            <a href="https://github.com/JulioCssar" target="_blank">
+                                <img src="{% static 'img/Alunos/JulioCesar.jpeg'%}" alt="Júlio Cesar">
+                            </a>
+                            <div class = "Feedback-overlay">
+                                <p><b><i>Júlio Cesar</i></b></p>
+                                <b>Nota ao Sensei: 9</b>
+                                <p><i>Instituição: PDA</i></p>
+                                <p class="descricao_aluno">"O Sensei segue etapa por etapa e explica bem"</p>
+                                <a href="https://github.com/JulioCssar" target="_blank">
+                                    <i id="github_aluno" class="fa fa-github"></i>
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                    <div class = "slide-2">
+                        <section>
+                            <a href="https://github.com/JuGon314" target="_blank">
+                                <img src="{% static 'img/Alunos/Juliana.jpeg'%}" alt="Júlio Cesar">
+                            </a>
+                            <div class = "Feedback-overlay">
+                                <p><b><i>Juliana Gonçalves</i></b></p>
+                                <b>Nota ao Sensei: 10</b>
+                                <p><i>Instituição: PDA</i></p>
+                                <p class="descricao_aluno">"Didática excelente, explica bem e consegue tirar todas as dúvidas."</p>
+                                <a href="https://github.com/JuGon314" target="_blank">
+                                    <i id="github_aluno" class="fa fa-github"></i>
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                    <div class = "slide-2">
+                        <section>
+                            <a href="https://github.com/mayconslv" target="_blank">
+                                <img src="{% static 'img/Alunos/Maycon.jpeg'%}" alt="Júlio Cesar">
+                            </a>
+                            <div class = "Feedback-overlay">
+                                <p><b><i>Maycon Silva</i></b></p>
+                                <b>Nota ao Sensei: 10</b>
+                                <p><i>Instituição: PDA</i></p>
+                                <p class="descricao_aluno">"As aulas são objetivas e muito bem explicadas!"</p>
+                                <a href="https://github.com/mayconslv" target="_blank">
+                                    <i id="github_aluno" class="fa fa-github"></i>
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                    <div class = "slide-2">
+                        <section>
+                            <a href="https://github.com/mayconslv" target="_blank">
+                                <img src="{% static 'img/Alunos/Maycon.jpeg'%}" alt="Júlio Cesar">
+                            </a>
+                            <div class = "Feedback-overlay">
+                                <p><b><i>Maycon Silva</i></b></p>
+                                <b>Nota ao Sensei: 10</b>
+                                <p><i>Instituição: PDA</i></p>
+                                <p class="descricao_aluno">"As aulas são objetivas e muito bem explicadas!"</p>
+                                <a href="https://github.com/mayconslv" target="_blank">
+                                    <i id="github_aluno" class="fa fa-github"></i>
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                    <div class = "slide-2">
+                        <section>
+                            <a href="https://github.com/mayconslv" target="_blank">
+                                <img src="{% static 'img/Alunos/Maycon.jpeg'%}" alt="Júlio Cesar">
+                            </a>
+                            <div class = "Feedback-overlay">
+                                <p><b><i>Maycon Silva</i></b></p>
+                                <b>Nota ao Sensei: 10</b>
+                                <p><i>Instituição: PDA</i></p>
+                                <p class="descricao_aluno">"As aulas são objetivas e muito bem explicadas!"</p>
+                                <a href="https://github.com/mayconslv" target="_blank">
+                                    <i id="github_aluno" class="fa fa-github"></i>
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                    <div class = "slide-2">
+                        <section>
+                            <a href="https://github.com/mayconslv" target="_blank">
+                                <img src="{% static 'img/Alunos/Maycon.jpeg'%}" alt="Júlio Cesar">
+                            </a>
+                            <div class = "Feedback-overlay">
+                                <p><b><i>Maycon Silva</i></b></p>
+                                <b>Nota ao Sensei: 10</b>
+                                <p><i>Instituição: PDA</i></p>
+                                <p class="descricao_aluno">"As aulas são objetivas e muito bem explicadas!"</p>
+                                <a href="https://github.com/mayconslv" target="_blank">
+                                    <i id="github_aluno" class="fa fa-github"></i>
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                {% comment %} 3ª Parte Animação Vertical {% endcomment %}
+                <div class = "carousel-container-2">
+                    <div class = "slide-2">
+                        <section>
+                            <a href="https://github.com/mayconslv" target="_blank">
+                                <img src="{% static 'img/Alunos/Maycon.jpeg'%}" alt="Júlio Cesar">
+                            </a>
+                            <div class = "Feedback-overlay">
+                                <p><b><i>Maycon Silva</i></b></p>
+                                <b>Nota ao Sensei: 10</b>
+                                <p><i>Instituição: PDA</i></p>
+                                <p class="descricao_aluno">"As aulas são objetivas e muito bem explicadas!"</p>
+                                <a href="https://github.com/mayconslv" target="_blank">
+                                    <i id="github_aluno" class="fa fa-github"></i>
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                    <div class = "slide-2">
+                        <section>
+                            <a href="https://github.com/mayconslv" target="_blank">
+                                <img src="{% static 'img/Alunos/Maycon.jpeg'%}" alt="Júlio Cesar">
+                            </a>
+                            <div class = "Feedback-overlay">
+                                <p><b><i>Maycon Silva</i></b></p>
+                                <b>Nota ao Sensei: 10</b>
+                                <p><i>Instituição: PDA</i></p>
+                                <p class="descricao_aluno">"As aulas são objetivas e muito bem explicadas!"</p>
+                                <a href="https://github.com/mayconslv" target="_blank">
+                                    <i id="github_aluno" class="fa fa-github"></i>
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                    <div class = "slide-2">
+                        <section>
+                            <a href="https://github.com/mayconslv" target="_blank">
+                                <img src="{% static 'img/Alunos/Maycon.jpeg'%}" alt="Júlio Cesar">
+                            </a>
+                            <div class = "Feedback-overlay">
+                                <p><b><i>Maycon Silva</i></b></p>
+                                <b>Nota ao Sensei: 10</b>
+                                <p><i>Instituição: PDA</i></p>
+                                <p class="descricao_aluno">"As aulas são objetivas e muito bem explicadas!"</p>
+                                <a href="https://github.com/mayconslv" target="_blank">
+                                    <i id="github_aluno" class="fa fa-github"></i>
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                    <div class = "slide-2">
+                        <section>
+                            <a href="https://github.com/mayconslv" target="_blank">
+                                <img src="{% static 'img/Alunos/Maycon.jpeg'%}" alt="Júlio Cesar">
+                            </a>
+                            <div class = "Feedback-overlay">
+                                <p><b><i>Maycon Silva</i></b></p>
+                                <b>Nota ao Sensei: 10</b>
+                                <p><i>Instituição: PDA</i></p>
+                                <p class="descricao_aluno">"As aulas são objetivas e muito bem explicadas!"</p>
+                                <a href="https://github.com/mayconslv" target="_blank">
+                                    <i id="github_aluno" class="fa fa-github"></i>
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                    <div class = "slide-2">
+                        <section>
+                            <a href="https://github.com/mayconslv" target="_blank">
+                                <img src="{% static 'img/Alunos/Maycon.jpeg'%}" alt="Júlio Cesar">
+                            </a>
+                            <div class = "Feedback-overlay">
+                                <p><b><i>Maycon Silva</i></b></p>
+                                <b>Nota ao Sensei: 10</b>
+                                <p><i>Instituição: PDA</i></p>
+                                <p class="descricao_aluno">"As aulas são objetivas e muito bem explicadas!"</p>
+                                <a href="https://github.com/mayconslv" target="_blank">
+                                    <i id="github_aluno" class="fa fa-github"></i>
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                    <div class = "slide-2">
+                        <section>
+                            <a href="https://github.com/mayconslv" target="_blank">
+                                <img src="{% static 'img/Alunos/Maycon.jpeg'%}" alt="Júlio Cesar">
+                            </a>
+                            <div class = "Feedback-overlay">
+                                <p><b><i>Maycon Silva</i></b></p>
+                                <b>Nota ao Sensei: 10</b>
+                                <p><i>Instituição: PDA</i></p>
+                                <p class="descricao_aluno">"As aulas são objetivas e muito bem explicadas!"</p>
+                                <a href="https://github.com/mayconslv" target="_blank">
+                                    <i id="github_aluno" class="fa fa-github"></i>
+                                </a>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>
@@ -316,8 +610,9 @@
         </div>
     </main>
     <footer>
-        <p> {{copyright}} </p>
-
+        <div class="theFooter">
+            <p> {{copyright}} </p>
+        </div>
     </footer>
 </body>
 </html>

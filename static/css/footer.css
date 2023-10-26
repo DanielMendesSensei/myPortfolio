@@ -1,4 +1,26 @@
 @charset "utf-8";
+
+footer 
+{
+	display: flex;
+	justify-content: center;
+}
+
+.theFooter
+{
+	margin-top: 15px;
+	width: 96%;
+	height: 100px;
+	padding: 10px;
+	background-color: var(--second-bg-color);
+	box-shadow: var(--sixth-bg-color) 0px 1px 2px 0px, var(--seventh-bg-color) 0px 2px 6px 2px;
+	border-radius: 10px;
+}
+.theFooter > p {
+	color: black;
+}
+
+
 @media screen and (max-width: 320px)
 {
 

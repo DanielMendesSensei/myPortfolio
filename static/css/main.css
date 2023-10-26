@@ -3,6 +3,10 @@ main
 {
 	display: none;
 }
+body {
+	width: 100%;
+	background-color: var(--bg-color);
+}
 #Desktop_main
 {
 	width: 100%;
@@ -323,17 +327,22 @@ main
     margin: auto;
     position: relative;
     width: 100%;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: space-evenly;
     overflow: hidden;
 }
 
 /* tentar fazer a animação na vertical */
-.carousel-container-2{ 
-    display: flex;
-    height: calc(250px * 18);
-    animation: scroll_2 60s linear infinite;
+.carousel-container-2
+{
+	margin-top: -645px;
+}
 
+
+.carousel-container-2{ 
+	height: auto;
+	width: auto;
+    animation: scroll_2 10s linear infinite;
 }
 
 .carousel-container-2:hover{
@@ -342,13 +351,14 @@ main
 
 
 .slide-2{
-    height: 200px;
-    width: 250px;
+    height: 170px;
+    width: 170px;
     display: flex;
 	flex-direction: column;
+	justify-content: center;
     align-items: center;
-    padding-right: 170px;
     perspective: 100px;
+	padding-bottom: 10px;
 }
 
 
@@ -357,22 +367,88 @@ main
         transform: translateY(0);
     }
     100% {
-        transform: translateY(calc(250px * 9));
+        transform: translateY(calc(180px * 3));
     }
 } 
 
-
-.slide-2 img {
-    width: 150%;
+.slide-2 section 
+{
+    width: 170px;
+	height: 170px;
+	border-radius: 10px;
+	display: flex;
+	position: relative;
+	align-items: center;
+	background-color: var(--fourth-bg-color);
+	box-shadow: var(--sixth-bg-color) 0px 1px 2px 0px, var(--seventh-bg-color) 0px 2px 6px 2px;
     transition: transform 1s;
-}
-
-.slide-2 img:hover {
-    transform: scale(1.2);
 	cursor: pointer;
+	transition: all 1s ease;
 }
 
-#auto-corousel::before, #auto-corousel-2::before{
+.slide-2 section:hover {
+	width: 350px;
+	transition: all 1s ease;
+}
+
+.slide-2 section:hover .Feedback-overlay
+{
+	display: flex;
+	opacity: 1;
+	transform: translateX(170px);
+}
+
+.slide-2 section img
+{
+	display: block;
+	position: relative;
+	margin-left: 10px;
+	width: 150px;
+	height: 150px;
+	border-radius: 10px 0px;
+	z-index: 1;
+}
+
+.Feedback-overlay
+{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	top: 0;
+	left: 0;
+	width: 48%;
+	height: 100%;
+	opacity: 0;
+	color: var(--text-color);
+	transition: all 1s ease;
+	font-size: 1.1rem;
+	font-family: Myriad Pro;
+	text-align: justify;
+}
+
+#github_aluno
+{
+	margin-top: 5px;
+	margin-left: 90%;
+	color: var(--text-color);
+	transition: all .2s ease;
+}
+
+#github_aluno:hover
+{
+	/* Trabalhar na cor */
+	color: var(--second-text-color);
+	transition: all .2s ease;
+}
+
+.descricao_aluno
+{
+	margin-top: 5px;
+}
+
+#auto-corousel::before
+{
 	background: linear-gradient(to right, var(--text-color) -90%,
     var(--decay-bg-color) 100%);
 	border-radius: 10px;
@@ -385,7 +461,8 @@ main
     top: 0;
 }
 
- #auto-corousel::after, #auto-corousel-2::after{
+#auto-corousel::after
+{
 	background: linear-gradient(to right, var(--text-color) -90%,
     var(--decay-bg-color) 100%);
 	border-radius: 10px;
@@ -397,8 +474,38 @@ main
     right: 0;
     top: 0;
     transform: rotateZ(180deg);
-}  
+} 
 
+#auto-corousel-2::before
+{
+	/* background: linear-gradient(to bottom, var(--text-color) -90%,
+	var(--decay-bg-color) 100%); */
+	background-color: transparent;
+	border-radius: 10px;
+    content: '';
+    height: 65px;
+    position:absolute;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+#auto-corousel-2::after{
+	/* background: linear-gradient(to top, var(--text-color) -90%,
+    var(--decay-bg-color) 100%); */
+	background-color: transparent;
+	border-radius: 10px;
+	content: '';
+    height: 65px;
+	width: 100%;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 185px;
+    transform: rotateZ(0deg);
+}
+
+ 
 
 @media screen and (max-width: 320px)
 {
